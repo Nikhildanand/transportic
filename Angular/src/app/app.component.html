@@ -1,2 +1,45 @@
-<app-button [label]="label" [styles]="{height: '48px'}"></app-button>
-<app-dummy-component></app-dummy-component>
+<div class="container my-5">
+  <div class="row">
+    <div class="col-12 mb-3">
+      <app-button
+        label="Full Width - Enabled"
+        [fullWidth]="true"
+        (click)="buttonClick()"
+      >
+      </app-button>
+    </div>
+    <div class="col-12 mb-3">
+      <app-button
+        label="Full Width - Disabled"
+        [disabled]="true"
+        [fullWidth]="true"
+        (click)="buttonClick()"
+        >
+      </app-button>
+    </div>
+    <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center mb-3">
+      <app-button
+        label="Standard"
+        (click)="buttonClick()"
+        >
+      </app-button>
+    </div>
+    <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center mb-3">
+      <app-button
+        label="Outline"
+        [outline]="true"
+        (click)="buttonClick()"
+      >
+      </app-button>
+    </div>
+    <div class="col-sm-12 col-md-4 d-flex justify-content-center align-items-center mb-3">
+      <app-button
+        label="Rounded"
+        [outline]="true"
+        (click)="buttonClick()"
+        [rounded]="true"
+      >
+      </app-button>
+    </div>
+  </div>
+</div>

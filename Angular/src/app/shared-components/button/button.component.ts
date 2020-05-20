@@ -8,11 +8,14 @@ import { Component, OnInit, Input } from '@angular/core';
 export class ButtonComponent implements OnInit {
 
   @Input() label: string;
-  @Input() styles: any;
+  @Input() outline: boolean = false;
+  @Input() fullWidth: boolean = false;
+  @Input() disabled: boolean = false;
+  @Input() rounded: boolean = false;
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void { }
+  
+  /* All conditions moved to template using ngClass which is better */
 }

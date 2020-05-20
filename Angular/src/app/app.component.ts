@@ -6,6 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-
-  label = 'button label';
+  
+  buttonClick() {
+    /* Function to check the functionality of button click in parent class 
+       Do not use this function while pushing to git repo
+    */
+    alert('Button Clicked');
+  }
 }

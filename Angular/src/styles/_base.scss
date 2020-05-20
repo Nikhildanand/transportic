@@ -1,0 +1,10 @@
+/* Import Variables */
+@import './variables';
+
+/* Set html tag default styles */
+*, html, body {
+  font-family: $font-family-default;
+  font-size: $font-size-default;
+  line-height: $line-height-default;
+  color: $color-black;
+}

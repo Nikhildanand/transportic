@@ -1,0 +1,30 @@
+@import '../../../styles/variables';
+
+.app-button {
+  font-weight: bold;
+  /* Invision common padding founded to be 50px to left and right by using chrome extensions */
+  padding-left: 50px;
+  padding-right: 50px;
+  /* Heights of all buttons were 48px in invision. Set min-height to adjust if content is longer */
+  min-height: 48px;
+  /* Added line height because bootstrap btn class override default line-height */
+  line-height: 16px;
+  /* Added uppercase because all characters in buttons are in uppercase */
+  text-transform: uppercase;
+  &_rounded {
+    border-radius: 21px;
+    padding-left: 18px;
+    padding-right: 18px;
+    min-height: 42px;
+  }
+  &_outline {
+    /* Border for outlined buttons are different from bootstrap class */
+    border: 1px solid $light-grey;
+  }
+  &:disabled {
+    color: $midnight-grey;
+    background-color: $light-grey;
+    /* Had to remove borders (Given by bootstrap by default) */
+    border: none;
+  }
+}

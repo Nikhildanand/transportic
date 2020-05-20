@@ -1,3 +1,15 @@
-<div id="button">
-  <button type="button" class="btn btn-primary" [ngStyle]="styles">{{label}}</button>
-</div>
+<!-- class attribute contains common classes used for every button -->
+<!-- Used ngClass to add multiple conditions directly to html file -->
+<button
+  type="button"
+  class="btn app-button"
+  [disabled]="disabled"
+  [ngClass]="{
+    'btn-primary': !outline,
+    'btn-outline-primary app-button_outline': outline,
+    'w-100': fullWidth,
+    'app-button_rounded': rounded
+  }"
+>
+  {{ label }}
+</button>

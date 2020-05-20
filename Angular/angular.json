@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "transportic"
+    }
+  },
+  "defaultProject": "transportic",
+  "cli": {
+    "analytics": "11ddb5f6-4925-4c86-8088-822533e3bff5"
+  }
 }
